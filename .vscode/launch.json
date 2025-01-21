@@ -1,0 +1,90 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Java Program",
+            "request": "launch",
+            "mainClass": ""
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "CloudGatewayApplication",
+            "request": "launch",
+            "mainClass": "com.example.CloudGateway.CloudGatewayApplication",
+            "projectName": "CloudGateway"
+        },
+        {
+            "type": "java",
+            "name": "EmployeeServiceApplication",
+            "request": "launch",
+            "mainClass": "com.example.Employee_service.EmployeeServiceApplication",
+            "projectName": "Employee-service"
+        },
+        {
+            "type": "java",
+            "name": "EurekaRegistryApplication",
+            "request": "launch",
+            "mainClass": "com.example.EurekaRegistry.EurekaRegistryApplication",
+            "projectName": "EurekaRegistry"
+        },
+        {
+            "type": "java",
+            "name": "EventServiceApplication",
+            "request": "launch",
+            "mainClass": "com.example.Event_service.EventServiceApplication",
+            "projectName": "Event-service"
+        },
+        {
+            "type": "java",
+            "name": "ManagementGatewayApplication",
+            "request": "launch",
+            "mainClass": "com.example.ManagementGateway.ManagementGatewayApplication",
+            "projectName": "ManagementGateway"
+        },
+        {
+            "type": "java",
+            "name": "ParkingServiceApplication",
+            "request": "launch",
+            "mainClass": "com.example.Parking_service.ParkingServiceApplication",
+            "projectName": "Parking-service"
+        },
+        {
+            "type": "java",
+            "name": "TaskApplication",
+            "request": "launch",
+            "mainClass": "com.example.Task.TaskApplication",
+            "projectName": "Task"
+        },
+        {
+            "type": "java",
+            "name": "UserServiceApplication",
+            "request": "launch",
+            "mainClass": "com.example.User_service.UserServiceApplication",
+            "projectName": "User-service"
+        },
+        {
+            "type": "java",
+            "name": "VendorServiceApplication",
+            "request": "launch",
+            "mainClass": "com.example.Vendor_service.VendorServiceApplication",
+            "projectName": "Vendor-service"
+        },
+        {
+            "type": "java",
+            "name": "WorkSpaceServiceApplication",
+            "request": "launch",
+            "mainClass": "com.example.WorkSpace_service.WorkSpaceServiceApplication",
+            "projectName": "WorkSpace-service"
+        }
+    ]
+}
