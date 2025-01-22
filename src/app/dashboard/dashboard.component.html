@@ -1,0 +1,53 @@
+<div class="dashboard-container">
+  <nav class="navbar">
+    <div class="user-info">
+      <span>Welcome {{ user.name }}</span>
+      <div class="dropdown" (click)="toggleDropdown()">
+        <i class="fas fa-user-circle"></i>
+        <div class="dropdown-content" *ngIf="showDropdown">
+          <div class="account-info">
+            <p>Email: {{ user.email }}</p>
+            <p>Username: {{ user.name }}</p>
+            <p>Employee ID: {{ user.employeeId }}</p>
+          </div>
+          <button (click)="logout()">Logout</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="cards-container">
+    <div class="card" (click)="navigateTo('events')">
+      <h3>Events</h3>
+      <p>Click to view events</p>
+    </div>
+    <div class="card" (click)="navigateTo('workspace')">
+      <h3>Workspace</h3>
+      <p>Click to view workspace</p>
+    </div>
+    <div class="card" (click)="navigateTo('parking')">
+      <h3>Parking</h3>
+      <p>Click to view parking</p>
+    </div>
+  </div>
+
+  <div class="table-container">
+    <h3>Latest Events</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Event Name</th>
+          <th>Scheduled Date</th>
+          <th>Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let event of latestEvents">
+          <td>{{ event.name }}</td>
+          <td>{{ event.date }}</td>
+          <td>{{ event.time }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

@@ -1,0 +1,101 @@
+/* General body styles */
+body {
+    background: linear-gradient(to right, #fcbddc, #b56ff7); /* Gradient background */
+    font-family: 'Arial', sans-serif; /* Font style */
+    color: #fff; /* Default text color */
+    height: 100vh; /* Full viewport height */
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin: 0; /* Remove default margin */
+}
+
+/* Card styles */
+.card {
+    width: 100%; /* Full width */
+    max-width: 400px; /* Maximum width of the card */
+    height: auto; /* Auto height for the card */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Prevent overflow */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+/* Card body styles */
+.card-body {
+    padding: 2rem; /* Padding inside the card */
+    background-color: rgba(255, 255, 255, 0.9); /* Light background for the card */
+    color: #333; /* Dark text color for contrast */
+}
+
+/* Heading styles */
+h2 {
+    color: #6a11cb; /* Gradient color for the heading */
+    margin-bottom: 1.5rem; /* Space below the heading */
+}
+
+/* Form group styles */
+.form-group {
+    margin-bottom: 1.5rem; /* Space between form groups */
+}
+
+/* Input styles */
+input.form-control {
+    border: 1px solid #ced4da; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Animation for focus */
+}
+
+input.form-control:focus {
+    border-color: #6a11cb; /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(106, 17, 203, 0.5); /* Shadow on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Button styles */
+.btn {
+    background-color: #2575fc; /* Button background color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Animation for button */
+}
+
+.btn:hover {
+    background-color: #1e5bbf; /* Darker blue on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+/* Link styles */
+a {
+    color: #6a11cb; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Toastr styles */
+.toast {
+    background-color: #2575fc; /* Background color for toastr */
+    color: #fff; /* Text color for toastr */
+}
+
+.toast-success {
+    background-color: #28a745; /* Success color */
+}
+
+.toast-error {
+    background-color: #dc3545; /* Error color */
+}
+
+.toast-warning {
+    background-color: #ffc107; /* Warning color */
+}
+
+/* Responsive styles */
+@media (max-width: 576px) {
+    .card {
+        width: 90%; /* Full width on small screens */
+        height: auto; /* Auto height on small screens */
+    }
+}
